@@ -39,7 +39,7 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 | `setTimePerSlide()` | Changing the visibility time of a single slide        | number                | any number in miliseconds                             | 5000ms        | false    | `setTimePerSlide(1000)`          |
 | `setTimingFn()`     | Changing the animation time                           | number                | any number in miliseconds                             | 250ms         | false    | `setTimingFn(200)`               |
 | `setTransitionFn()` | Changing the animation function                       | string                | ease, linear, ease-in, ease-out, ease-in-out          | ease-in       | false    | `setTransitionFn('ease-in-out')` |
-| `setType()`         | Change animation type                                  | string                | [**Animation Types**](#animation-types) | false         | fading   | `setType('fading')`              |
+| `setType()`         | Change animation type                                  | string                | [**Animation Types**](#animation-types) | fading         | false   | `setType('fading')`              |
 
 #### **Animation Types**
 
@@ -51,7 +51,7 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 
 #### **Remove Listeners**
 
-The library uses the listener on elements that require it. If you want to stop carousels or remove its elements - **use the function below**
+The library uses the [listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on elements that require it. If you want to stop carousels or remove its elements - **use the function below**
 
 ##### Bundler
 
@@ -64,7 +64,8 @@ listener.destroyListeners()
 
 ```html
 <script src="node_modules/slidetoggle/umd/slideToggle.min.js">
-  const listener = PapaCarousel.listener; listener.destroyListeners();
+  const listener = PapaCarousel.listener; 
+  listener.destroyListeners();
 </script>
 ```
 
@@ -81,7 +82,7 @@ Install package by npm ( **will add it soon** )
 ```javascript
 import { PapaCarouselBuilder } from './lib/papaCarouselBuilder'
 
-const myCarousel = new PapaCarousel.PapaCarouselBuilder()
+const myCarousel = new PapaCarouselBuilder()
                         .setParent('.papa-container')
                         .setElements('.papa-item')
                         .setButtons(true)
