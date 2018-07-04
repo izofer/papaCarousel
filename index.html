@@ -27,13 +27,53 @@
             </h1>
         </header>
         <main class="present-carousel">
-            <h2 class="present-title">
+            <h3 class="present-title">
                 <img src="./assets/papa-54.png" alt="">
                 <span>Carousel presentation</span>
                 <img src="./assets/papa-54.png" alt="">
-            </h2>
+            </h3>
+            <section class="carousel-options">
+                <h2 class="options-title">Choose PapaCarousel options</h2>
+                <div class="options-container">
+                    <div class="option">
+                        <label for="navigation">setButtons()</label>
+                        <input type="checkbox" id="navigation" checked="true">
+                    </div>
+                    <div class="option">
+                        <label for="progressBar">setProgressBar()</label>
+                        <input type="checkbox" id="progressBar" checked="true">
+                    </div>
+                    <div class="option">
+                        <label for="timePerSlide">setTimePerSlide()</label>
+                        <input type="number" id="timePerSlide" value="2500">
+                    </div>
+                    <div class="option">
+                        <label for="timingFn">setTimingFn()</label>
+                        <input class="input-timing" type="number" id="timingFn" value="250">
+                    </div>
+                    <div class="option">
+                        <label for="transitionFn">setTransitionFn()</label>
+                        <select id="transitionFn">
+                            <option value="ease">ease</option>
+                            <option value="linear">linear</option>
+                            <option value="ease-in">ease-in</option>
+                            <option value="ease-out">ease-out</option>
+                            <option value="ease-in-out">ease-in-out</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="type">setType()</label>
+                        <select class="select-type" id="type">
+                            <option value="fading">fading</option>
+                            <option value="slidingY">slidingY</option>
+                            <option value="slidingX">slidingX</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="submit-options">Not working now</button>
+            </section>
             <section class="carousel fading">
-                <h2 class="carousel-title">Fading Carousel</h2>
+                <h2 class="carousel-title">SlidingY Carousel</h2>
                 <div class="papa-container">
                     <div class="papa-item first-color">1</div>
                     <div class="papa-item second-color">2</div>
