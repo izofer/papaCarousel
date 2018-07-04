@@ -1,4 +1,18 @@
-[TOC]
+  # Navigation
+  
+  * [**About**](#--about--)
+  * [**Working Demo**](#--working-demo--)
+  * [**API**](#--api--)
+      - [**Animation Types**](#--animation-types--)
+      - [**Remove Listeners**](#--remove-listeners--)
+        * [Bundler](#bundler)
+        * [No Bundler (UMD)](#no-bundler--umd-)
+- [**Usage**](#--usage--)
+      - [**Bundler**](#--bundler--)
+      - [**No Bundler (UMD)**](#--no-bundler--umd---)
+  * [**Styles**](#--styles--)
+  * [**License**](#--license--)
+
 
 ## **About**
 
@@ -15,15 +29,15 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 
 | Function             | Reason for use                                        | Argument Type         | Options                                               | Default value | Required | Example                          |
 | -------------------- | ----------------------------------------------------- | --------------------- | ----------------------------------------------------- | ------------- | -------- | -------------------------------- |
-| `setParent()`        | Setting reference to carousel container               | string or HTMLElement | -                                                     | -             | true     | `setParent('.papa-container')`   |
-| `setElements()`      | Setting reference to carousel slides                  | string or HTMLElement | -                                                     | -             | true     | `setElements('.papa-item')`      |
+| `setParent()`        | Set reference to carousel container               | string or HTMLElement | -                                                     | -             | true     | `setParent('.papa-container')`   |
+| `setElements()`      | Set reference to carousel slides                  | string or HTMLElement | -                                                     | -             | true     | `setElements('.papa-item')`      |
 | `getPapa()`          | Starting carousel - **Use this function as last one** | -                     | -                                                     | -             | true     | `getPapa()`                      |
-| `setButtons())`      | Show navigation button                                | boolean               | true false                                            | false         | false    | `setButtons(true)`               |
+| `setButtons())`      | Show navigation                                | boolean               | true false                                            | false         | false    | `setButtons(true)`               |
 | `setProgressBar())`  | Show progress bar                                     | boolean               | true false                                            | false         | false    | `setProgressBar(true)`           |
 | `setTimePerSlide())` | Changing the visibility time of a single slide        | number                | any number in miliseconds                             | 5000ms        | false    | `setTimePerSlide(1000)`          |
 | `setTimingFn())`     | Changing the animation time                           | number                | any number in miliseconds                             | 250ms         | false    | `setTimingFn(200)`               |
 | `setTransitionFn())` | Changing the animation function                       | string                | ease, linear, ease-in, ease-out, ease-in-out          | ease-in       | false    | `setTransitionFn('ease-in-out')` |
-| `setType())`         | Change typu animacji                                  | string                | [Animation Types](#<strong>Animation Types</strong>>) | false         | fading   | `setType('fading')`              |
+| `setType())`         | Change animation type                                  | string                | [**Animation Types**](#--animation-types--) | false         | fading   | `setType('fading')`              |
 
 #### **Animation Types**
 
@@ -65,15 +79,15 @@ Install package by npm ( **will add it soon** )
 import { PapaCarouselBuilder } from './lib/papaCarouselBuilder'
 
 const myCarousel = new PapaCarousel.PapaCarouselBuilder()
-  .setParent('.papa-container')
-  .setElements('.papa-item')
-  .setButtons(true)
-  .setProgressBar(true)
-  .setTimePerSlide(5000)
-  .setTimingFn(300)
-  .setTransitionFn('linear')
-  .setType('slidingX')
-  .getPapa()
+                        .setParent('.papa-container')
+                        .setElements('.papa-item')
+                        .setButtons(true)
+                        .setProgressBar(true)
+                        .setTimePerSlide(5000)
+                        .setTimingFn(300)
+                        .setTransitionFn('linear')
+                        .setType('slidingX')
+                        .getPapa()
 ```
 
 #### **No Bundler (UMD)**
@@ -91,15 +105,15 @@ const myCarousel = new PapaCarousel.PapaCarouselBuilder()
         <script src="node_modules/slidetoggle/umd/slideToggle.min.js"></script>
         <script>
             const myCarousel = new PapaCarousel.PapaCarouselBuilder()
-                                        .setParent('.papa-container')
-                                        .setElements('.papa-item')
-                                        .setButtons(true)
-                                        .setProgressBar(true)
-                                        .setTimePerSlide(5000)
-                                        .setTimingFn(300)
-                                        .setTransitionFn('linear')
-                                        .setType('slidingX')
-                                        .getPapa();
+                                    .setParent('.papa-container')
+                                    .setElements('.papa-item')
+                                    .setButtons(true)
+                                    .setProgressBar(true)
+                                    .setTimePerSlide(5000)
+                                    .setTimingFn(300)
+                                    .setTransitionFn('linear')
+                                    .setType('slidingX')
+                                    .getPapa();
         </script>
     </html>
 ```
