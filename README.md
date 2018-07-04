@@ -27,10 +27,10 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 
 #### **Animation Types**
 
-    fading - simple FadeIn <-> FadeOut
-    slidingY - slide from 100% to -100% on the Y axis
-    slidingX - slide from 100% to -100% on the X axis
-    more will come..
+    - fading - simple FadeIn <-> FadeOut
+    - slidingY - slide from 100% to -100% on the Y axis
+    - slidingX - slide from 100% to -100% on the X axis
+    *more will come..*
 
 #### **Remove Listeners**
 
@@ -45,7 +45,7 @@ listener.destroyListeners()
 
 ##### No Bundler (UMD)
 
-```javascript
+```html
 <script src="node_modules/slidetoggle/umd/slideToggle.min.js">
   const listener = PapaCarousel.listener; listener.destroyListeners();
 </script>
@@ -106,7 +106,7 @@ const myCarousel = new PapaCarousel.PapaCarouselBuilder()
 
 ## **Styles**
 
-There are **certain styles that are required**. Check this file: [Required Styles](https://github.com/zgrybus/papaCarousel/blob/master/src/papaCarousel.css)
+There are **certain styles that are required**. Check this file: [Required Styles](https://github.com/zgrybus/papaCarousel/blob/master/papaCarousel.css)
 
 ## **License**
 
