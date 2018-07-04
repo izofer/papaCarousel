@@ -2,7 +2,7 @@
   
   * [**About**](#about)
   * [**Working Demo**](#working-demo)
-  * [**API**](#--api--)
+  * [**API**](#api)
       - [**Animation Types**](#animation-types)
       - [**Remove Listeners**](#remove-listeners)
         * [Bundler](#bundler)
@@ -17,7 +17,7 @@
 ## **About**
 
 Simple Carousel library written in vanilla JS, without any other dependencies!
-Just remember to use **required** functions from [API](#<strong>API</strong>>)
+Just remember to use **required** functions from [API](#api)
 
 ## **Working Demo**
 
@@ -32,19 +32,20 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 | `setParent()`        | Set reference to carousel container               | string or HTMLElement | -                                                     | -             | true     | `setParent('.papa-container')`   |
 | `setElements()`      | Set reference to carousel slides                  | string or HTMLElement | -                                                     | -             | true     | `setElements('.papa-item')`      |
 | `getPapa()`          | Starting carousel - **Use this function as last one** | -                     | -                                                     | -             | true     | `getPapa()`                      |
-| `setButtons())`      | Show navigation                                | boolean               | true false                                            | false         | false    | `setButtons(true)`               |
-| `setProgressBar())`  | Show progress bar                                     | boolean               | true false                                            | false         | false    | `setProgressBar(true)`           |
-| `setTimePerSlide())` | Changing the visibility time of a single slide        | number                | any number in miliseconds                             | 5000ms        | false    | `setTimePerSlide(1000)`          |
-| `setTimingFn())`     | Changing the animation time                           | number                | any number in miliseconds                             | 250ms         | false    | `setTimingFn(200)`               |
-| `setTransitionFn())` | Changing the animation function                       | string                | ease, linear, ease-in, ease-out, ease-in-out          | ease-in       | false    | `setTransitionFn('ease-in-out')` |
-| `setType())`         | Change animation type                                  | string                | [**Animation Types**](#--animation-types--) | false         | fading   | `setType('fading')`              |
+| `setButtons()`      | Show navigation                                | boolean               | true false                                            | false         | false    | `setButtons(true)`               |
+| `setProgressBar()`  | Show progress bar                                     | boolean               | true false                                            | false         | false    | `setProgressBar(true)`           |
+| `setTimePerSlide()` | Changing the visibility time of a single slide        | number                | any number in miliseconds                             | 5000ms        | false    | `setTimePerSlide(1000)`          |
+| `setTimingFn()`     | Changing the animation time                           | number                | any number in miliseconds                             | 250ms         | false    | `setTimingFn(200)`               |
+| `setTransitionFn()` | Changing the animation function                       | string                | ease, linear, ease-in, ease-out, ease-in-out          | ease-in       | false    | `setTransitionFn('ease-in-out')` |
+| `setType()`         | Change animation type                                  | string                | [**Animation Types**](#animation-types) | false         | fading   | `setType('fading')`              |
 
 #### **Animation Types**
 
-    - fading - simple FadeIn <-> FadeOut
-    - slidingY - slide from 100% to -100% on the Y axis
-    - slidingX - slide from 100% to -100% on the X axis
-    *more will come..*
+    1. `fading` - simple FadeIn <-> FadeOut
+    2. `slidingY` - slide from 100% to -100% on the Y axis
+    3. `slidingX` - slide from 100% to -100% on the X axis
+
+*more will come..* :)
 
 #### **Remove Listeners**
 
