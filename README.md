@@ -19,6 +19,8 @@
 Simple Carousel library written in vanilla JS, without any other dependencies!
 Just remember to use **required** functions from [API](#api)
 
+*Recomended by* ![alt text](http://www.avatarsdb.com/avatars/papa_smurf.gif "Papa smurf")
+
 ## **Working Demo**
 
 Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io/papaCarousel/)
@@ -41,9 +43,9 @@ Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io
 
 #### **Animation Types**
 
-    1. `fading` - simple FadeIn <-> FadeOut
-    2. `slidingY` - slide from 100% to -100% on the Y axis
-    3. `slidingX` - slide from 100% to -100% on the X axis
+1. `fading` - simple FadeIn <-> FadeOut
+2. `slidingY` - slide from 100% to -100% on the Y axis
+3. `slidingX` - slide from 100% to -100% on the X axis
 
 *more will come..* :)
 
