@@ -24,13 +24,6 @@
     "docs": "typedoc -p . --theme minimal --target 'es6' --excludeNotExported --excludePrivate --ignoreCompilerErrors --exclude \"**/src/**/__tests__/*.*\" --out docs src/",
     "validate-config": "tsc -p ./config",
     "verify": "npm run validate-config",
-    "commit": "git-cz",
-    "style": "npm run format -- --list-different && npm run lint",
-    "style:fix": "npm run format:fix && npm run lint:fix",
-    "format": "prettier --config config/prettier.config.js \"**/*.{ts,tsx,js,jsx,css,scss,sass,less,md}\"",
-    "format:fix": "npm run format -- --write",
-    "lint": "tslint --project tsconfig.json --format codeFrame",
-    "lint:fix": "npm run lint -- --fix",
     "prerelease": "npm run build",
     "release": "standard-version",
     "postrelease": "npm run release:github && npm run release:npm",
@@ -49,23 +42,6 @@
       "types": "conventional-commit-types",
       "maxSubjectLength": 120
     }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "validate-commit-msg",
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run style && npm test -- --bail --onlyChanged"
-    }
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx,js,jsx,css,scss,sass,less,md}": [
-      "prettier --config config/prettier.config.js --write",
-      "git add"
-    ],
-    "src/**/*.{ts,tsx}": [
-      "npm run lint:fix",
-      "git add"
-    ]
   },
   "peerDependencies": {
     "tslib": ">=1.9.0",
