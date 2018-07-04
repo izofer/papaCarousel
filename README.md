@@ -1,17 +1,17 @@
   # Navigation
   
-  * [**About**](#--about--)
-  * [**Working Demo**](#--working-demo--)
+  * [**About**](#about)
+  * [**Working Demo**](#working-demo)
   * [**API**](#--api--)
-      - [**Animation Types**](#--animation-types--)
-      - [**Remove Listeners**](#--remove-listeners--)
+      - [**Animation Types**](#animation-types)
+      - [**Remove Listeners**](#remove-listeners)
         * [Bundler](#bundler)
-        * [No Bundler (UMD)](#no-bundler--umd-)
-- [**Usage**](#--usage--)
-      - [**Bundler**](#--bundler--)
-      - [**No Bundler (UMD)**](#--no-bundler--umd---)
-  * [**Styles**](#--styles--)
-  * [**License**](#--license--)
+        * [No Bundler](#no-bundler)
+  * [**Usage**](#usage)
+      - [**Bundler**](#bundler)
+      - [**No Bundler**](#no-bundler)
+  * [**Styles**](#styles)
+  * [**License**](#license)
 
 
 ## **About**
@@ -57,7 +57,7 @@ import { listener } from './lib/helpers/listener'
 listener.destroyListeners()
 ```
 
-##### No Bundler (UMD)
+##### No Bundler
 
 ```html
 <script src="node_modules/slidetoggle/umd/slideToggle.min.js">
@@ -65,7 +65,7 @@ listener.destroyListeners()
 </script>
 ```
 
-# **Usage**
+## **Usage**
 
 Install package by npm ( **will add it soon** )
 
@@ -90,7 +90,7 @@ const myCarousel = new PapaCarousel.PapaCarouselBuilder()
                         .getPapa()
 ```
 
-#### **No Bundler (UMD)**
+#### **No Bundler**
 
 ```html
     <html>
