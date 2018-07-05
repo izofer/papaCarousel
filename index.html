@@ -73,7 +73,8 @@
                 <button class="submit-options">Not working</button>
             </section>
             <section class="carousel">
-                <h2 class="carousel-title"><span class="carousel-type">Fading</span> Carousel</h2>
+                <h2 class="carousel-title">
+                    <span class="carousel-type">Fading</span> Carousel</h2>
                 <div class="papa-container">
                     <div class="papa-item first-color">1</div>
                     <div class="papa-item second-color">2</div>
@@ -93,12 +94,7 @@
     </div>
     <script src="./papacarousel.min.umd.js"></script>
     <script>
-        const myCarousel = new Papacarousel.PapaFascade()
-                                    .setParent('.papa-container')
-                                    .setElements('.papa-item')
-                                    .setButtons(true)
-                                    .setProgressBar(true)
-                                    .getPapa();
+        new Papacarousel.PapaFascade().setProgressBar(true).setButtons(true).getPapa();
     </script>
 </body>
 

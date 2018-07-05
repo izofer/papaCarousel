@@ -1,27 +1,25 @@
-  ## **Navigation**
-  
-  * [**About**](#about)
-  * [**Working Demo**](#working-demo)
-  * [**Usage**](#usage)
-      - [**Bundler**](#bundler)
-      - [**No Bundler**](#no-bundler)
-  * [**Styles**](#styles)
-  * [**API**](#api)
-      - [**Options**](#options)
-      - [**Remove Listeners**](#remove-listeners)
+  * [About](#about)
+  * [Working Demo](#working-demo)
+  * [Usage](#usage)
+      - [Bundler](#bundler)
+      - [No Bundler](#no-bundler)
+  * [Styles](#styles)
+  * [API](#api)
+      - [Options](#options)
+      - [Remove Listeners](#remove-listeners)
         * [Bundler](#bundler)
         * [No Bundler](#no-bundler)
-  * [**License**](#license)
+  * [License](#license)
  
 ## **About**
 
 Simple Carousel library written in vanilla JS, without any other dependencies!
-Just remember to use **required** functions from [API](#api)
+Just remember to use **required** functions from [API](#api).  
 *Recomended by* ![alt text](http://www.avatarsdb.com/avatars/papa_smurf.gif "Papa smurf")
 
 ## **Working Demo**
 
-Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io/papaCarousel/)
+Link to working demo ( **will add it soon** ) - [Demo](https://zgrybus.github.io/papaCarousel/).  
 **The use example is below.**
 
 ## **Usage**
@@ -87,7 +85,7 @@ new PapaFascade()
 
 ## **Styles**
 
-There are **certain styles that are required**. Check this file: [Required Styles](https://github.com/zgrybus/papaCarousel/blob/master/papaCarousel.css)
+There are **certain styles that are required**. Check this file: [Required Styles](https://github.com/zgrybus/papaCarousel/blob/master/papaCarousel.css).
 
 ## **API**
 
@@ -95,71 +93,71 @@ PapaCarousel has several options. To change any option, use the function present
 
 #### **Options**
 
-* `getPapa()`
-**Action**: Initialize and start carousel
-**Required**: true - **important**
-**Example**: getPapa();
-**Note**: Use this function as last one
+* `getPapa()`  
+**Action**: Initialize and start carousel  
+**Required**: true - **important**  
+**Example**: getPapa();  
+**Note**: Use this function as last one  
 
-* `setParent()`
-**Action**: Setting new element as parent of Carousel
-**Default value**: .papa-container
-**Argument type**: string or HTMLElement
-**Required**: false.
-**Example**: setParent('.my-class')
+* `setParent()`  
+**Action**: Setting new element as parent of Carousel  
+**Default value**: .papa-container  
+**Argument type**: string or HTMLElement  
+**Required**: false   
+**Example**: setParent('.my-class')  
 
-* `setElements()`
-**Action**: Setting new elemenets as Carousel's items
-**Default value**: .papa-item
-**Argument type**: string or HTMLElement
-**Required**: false.
-**Example**: setElements('.my-class')
+* `setElements()`  
+**Action**: Setting new elemenets as Carousel's items  
+**Default value**: .papa-item  
+**Argument type**: string or HTMLElement  
+**Required**: false  
+**Example**: setElements('.my-class')  
 
-* `setButtons()`
-**Action**: Show navigation of Carousel
-**Default value**: false
-**Argument options**: true / false
-**Required**: false.
-**Example**: setButtons(true)
+* `setButtons()`  
+**Action**: Show navigation of Carousel  
+**Default value**: false  
+**Argument options**: true / false  
+**Required**: false  
+**Example**: setButtons(true)  
 
-* `setProgressBar()`
-**Action**: Show progress bar
-**Default value**: false
-**Argument options**: true / false
-**Required**: false.
-**Example**: setProgressBar(true)
+* `setProgressBar()`  
+**Action**: Show progress bar  
+**Default value**: false  
+**Argument options**: true / false  
+**Required**: false    
+**Example**: setProgressBar(true)    
 
-* `setTimePerSlide()`
-**Action**: Changes the time of switching the slides
-**Default value**: 5000
-**Argument options**: number in milliseconds
-**Required**: false.
-**Example**: setTimePerSlide(2000)
+* `setTimePerSlide()`  
+**Action**: Changes the time of switching the slides   
+**Default value**: 5000    
+**Argument options**: number in milliseconds    
+**Required**: false    
+**Example**: setTimePerSlide(2000)    
 
-* `setTimingFn()`
-**Action**: Changes the duration of the animation
-**Default value**: 250
-**Argument options**: number in milliseconds
-**Required**: false.
-**Example**: setTimingFn(150)
+* `setTimingFn()`  
+**Action**: Changes the duration of the animation  
+**Default value**: 250  
+**Argument options**: number in milliseconds  
+**Required**: false  
+**Example**: setTimingFn(150)  
 
-* `setTransitionFn()`
-**Action**: Changes the animation function
-**Default value**: ease-in
-**Argument options**: ease, linear, ease-in, ease-out, ease-in-out
-**Required**: false.
-**Example**: setTransitionFn('ease-in-out')
+* `setTransitionFn()`  
+**Action**: Changes the animation function  
+**Default value**: ease-in  
+**Argument options**: ease, linear, ease-in, ease-out, ease-in-out  
+**Required**: false  
+**Example**: setTransitionFn('ease-in-out')  
 
-* `setType()`
-**Action**: Changes the animation function
-**Default value**: fading
-**Argument options**: fading, slidingX, slidingY,  **more will come.. :)**
-**Required**: false.
-**Example**: setType('slidingX')
+* `setType()`  
+**Action**: Changes the animation function  
+**Default value**: fading  
+**Argument options**: fading, slidingX, slidingY,  **more will come.. :)**  
+**Required**: false  
+**Example**: setType('slidingX')  
 
 #### **Remove Listeners**
 
-The library uses the [listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on elements that require it. If you want to stop carousels - **use the function below**
+The library uses the [listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on elements that require it. If you want to stop carousels - **use the function below**.
 
 ##### Bundler
 
