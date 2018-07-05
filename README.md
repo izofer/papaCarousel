@@ -145,7 +145,7 @@ PapaCarousel has several options. To change any option, use the function present
 **Action**: Changes the animation function  
 **Default value**: ease-in  
 **Argument options**: ease, linear, ease-in, ease-out, ease-in-out  
-**Required**: false  
+**Required**: false    
 **Example**: setTransitionFn('ease-in-out')  
 
 * `setType()`  
