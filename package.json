@@ -1,11 +1,11 @@
 {
   "name": "papacarousel",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Simple Carousel library written in vanilla JS, without any other dependencies!",
-  "main": "bundles/papacarousel.umd.js",
+  "main": "./bundles/papacarousel.umd.js",
   "module": "./esm5/index.js",
   "es2015": "./esm2015/index.js",
-  "typings": "./types/index.d.ts",
+  "typings": "./typings/index.d.ts",
   "sideEffects": false,
   "repository": {
     "type": "git",

@@ -57,15 +57,16 @@ The library uses the [listeners](https://developer.mozilla.org/en-US/docs/Web/AP
 ##### Bundler
 
 ```javascript
-import { listener } from './lib/helpers/listener'
-listener.destroyListeners()
+import { PapaFascade } from 'papacarousel'
+    const listener = new PapaFascade();
+    listener.destroyListeners();
 ```
 
 ##### No Bundler
 
 ```html
-<script src="node_modules/slidetoggle/umd/slideToggle.min.js">
-  const listener = PapaCarousel.listener; 
+<script src="node_modules/papacarousel/bundles/papacarousel.umd.min.js">
+  const listener = new PapaCarousel.PapaFascade(); 
   listener.destroyListeners();
 </script>
 ```
@@ -81,9 +82,9 @@ Install package by npm
 #### **Bundler**
 
 ```javascript
-import { PapaCarouselBuilder } from './lib/papaCarouselBuilder'
+import { PapaFascade } from 'papacarousel'
 
-const myCarousel = new PapaCarouselBuilder()
+const myCarousel = new PapaFascade()
                         .setParent('.papa-container')
                         .setElements('.papa-item')
                         .setButtons(true)
@@ -107,9 +108,9 @@ const myCarousel = new PapaCarouselBuilder()
               <div class="papa-item">3</div>
             </div>
         </body>
-        <script src="node_modules/slidetoggle/umd/slideToggle.min.js"></script>
+        <script src="node_modules/papacarousel/bundles/papacarousel.umd.min.js"></script>
         <script>
-            const myCarousel = new PapaCarousel.PapaCarouselBuilder()
+            const myCarousel = new PapaCarousel.PapaFascade()
                                     .setParent('.papa-container')
                                     .setElements('.papa-item')
                                     .setButtons(true)
