@@ -9,7 +9,6 @@ export class Listener {
 
     public addListener(eventName: string, element: HTMLElement, fn: (e: Event) => EventListenerOrEventListenerObject): void {
         const length = this.listenerArray.push({eventName, element, fn}) - 1;
-        console.log(this.listenerArray);
         element.addEventListener(eventName, fn);
     }
 

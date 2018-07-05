@@ -1,4 +1,5 @@
-  # Navigation
+  ## **Navigation**
+  
   
   * [**About**](#about)
   * [**Working Demo**](#working-demo)
@@ -71,7 +72,7 @@ listener.destroyListeners()
 
 ## **Usage**
 
-Install package by npm ( **will add it soon** )
+Install package by npm
 
 ```npm
   npm install --save-dev papacarousel

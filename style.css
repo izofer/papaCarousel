@@ -365,21 +365,21 @@ body {
   }
 }
 
-.fading img {
+.carousel img {
   right: 5px;
   top: 34px;
   width: 60px;
 }
 
 @media (min-width: 440px) {
-  .fading img {
+  .carousel img {
     top: 6px;
     right: 10px;
     width: 85px;
   }
 }
 @media (min-width: 850px) {
-  .fading img {
+  .carousel img {
     right: 25px;
   }
 }

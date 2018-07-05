@@ -2,11 +2,10 @@ import { concreteSubject } from './helpers/concreteSubject';
 export class ProgressBar {
     private progressBarEl: HTMLDivElement;
 
-    constructor() {
-        concreteSubject.attach(this.resetAnimation.bind(this));
-    }
+    constructor() {}
 
     initBar(parentEl: HTMLElement, timeAnimationFn: number): void {
+        concreteSubject.attach(this.resetAnimation.bind(this));
         this.progressBarEl = this.createNavEl(parentEl, ['progress-bar', 'animate'], timeAnimationFn);
     }
 

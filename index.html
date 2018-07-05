@@ -34,26 +34,26 @@
             </h3>
             <section class="carousel-options">
                 <h2 class="options-title">Choose PapaCarousel options</h2>
-                <div class="options-container">
+                <form class="options-container">
                     <div class="option">
-                        <label for="navigation">setButtons()</label>
-                        <input type="checkbox" id="navigation" checked="true">
+                        <label for="buttons">setButtons()</label>
+                        <input type="checkbox" id="buttons" name="buttons">
                     </div>
                     <div class="option">
                         <label for="progressBar">setProgressBar()</label>
-                        <input type="checkbox" id="progressBar" checked="true">
+                        <input type="checkbox" id="progressBar" name="progressBar">
                     </div>
                     <div class="option">
                         <label for="timePerSlide">setTimePerSlide()</label>
-                        <input type="number" id="timePerSlide" value="2500">
+                        <input type="number" id="timePerSlide" name="timePerSlide" value="5000">
                     </div>
                     <div class="option">
                         <label for="timingFn">setTimingFn()</label>
-                        <input class="input-timing" type="number" id="timingFn" value="250">
+                        <input class="input-timing" type="number" id="timingFn" name="timingFn" value="250">
                     </div>
                     <div class="option">
                         <label for="transitionFn">setTransitionFn()</label>
-                        <select id="transitionFn">
+                        <select id="transitionFn" name="transitionFn">
                             <option value="ease">ease</option>
                             <option value="linear">linear</option>
                             <option value="ease-in">ease-in</option>
@@ -63,17 +63,17 @@
                     </div>
                     <div class="option">
                         <label for="type">setType()</label>
-                        <select class="select-type" id="type">
+                        <select class="select-type" id="type" name="type">
                             <option value="fading">fading</option>
                             <option value="slidingY">slidingY</option>
                             <option value="slidingX">slidingX</option>
                         </select>
                     </div>
-                </div>
-                <button class="submit-options">Not working now</button>
+                </form>
+                <button class="submit-options">Not working</button>
             </section>
-            <section class="carousel fading">
-                <h2 class="carousel-title">SlidingY Carousel</h2>
+            <section class="carousel">
+                <h2 class="carousel-title"><span class="carousel-type">Fading</span> Carousel</h2>
                 <div class="papa-container">
                     <div class="papa-item first-color">1</div>
                     <div class="papa-item second-color">2</div>
@@ -91,7 +91,7 @@
             <img src="./assets/klakier.png" alt="">
         </footer>
     </div>
-    <script src="./papacarousel.min.umd.js"></script>
+    <script src="./papacarousel.umd.js"></script>
 </body>
 
 </html>
