@@ -95,62 +95,62 @@ PapaCarousel has several options. To change any option, use the function present
 
 #### **Options**
 
-* `getPapa()`
+* `getPapa()`  
 **Action**: Initialize and start carousel  
 **Required**: true - **important**  
 **Example**: getPapa();  
 **Note**: Use this function as last one  
 
-* `setParent()`
+* `setParent()`  
 **Action**: Setting new element as parent of Carousel  
 **Default value**: .papa-container  
 **Argument type**: string or HTMLElement  
 **Required**: false.  
 **Example**: setParent('.my-class')  
 
-* `setElements()`
+* `setElements()`  
 **Action**: Setting new elemenets as Carousel's items  
 **Default value**: .papa-item  
 **Argument type**: string or HTMLElement  
 **Required**: false.  
 **Example**: setElements('.my-class')  
 
-* `setButtons()`
+* `setButtons()`  
 **Action**: Show navigation of Carousel  
 **Default value**: false  
 **Argument options**: true / false  
 **Required**: false.  
 **Example**: setButtons(true)  
 
-* `setProgressBar()`
+* `setProgressBar()`  
 **Action**: Show progress bar  
 **Default value**: false  
 **Argument options**: true / false  
 **Required**: false.  
 **Example**: setProgressBar(true)  
 
-* `setTimePerSlide()`
+* `setTimePerSlide()`  
 **Action**: Changes the time of switching the slides  
 **Default value**: 5000  
 **Argument options**: number in milliseconds  
 **Required**: false.  
 **Example**: setTimePerSlide(2000)  
 
-* `setTimingFn()`
+* `setTimingFn()`  
 **Action**: Changes the duration of the animation  
 **Default value**: 250    
 **Argument options**: number in milliseconds  
 **Required**: false.  
 **Example**: setTimingFn(150)  
 
-* `setTransitionFn()`
+* `setTransitionFn()`  
 **Action**: Changes the animation function  
 **Default value**: ease-in  
 **Argument options**: ease, linear, ease-in, ease-out, ease-in-out  
 **Required**: false.  
 **Example**: setTransitionFn('ease-in-out')  
 
-* `setType()`
+* `setType()`  
 **Action**: Changes the animation function  
 **Default value**: fading  
 **Argument options**: fading, slidingX, slidingY,  **more will come.. :)**  
