@@ -8,8 +8,8 @@ export class PapaCarouselBuilder implements IBuilder {
     private timePerSlide: number = 5000;
     private transitionFn: TransitionFnType = 'ease-in';
     private timingFn: number = 250;
-    private parent: HTMLElement | string;
-    private elements: HTMLElement[] | string;
+    private parent: HTMLElement | string = '.papa-container';
+    private elements: HTMLElement[] | string = '.papa-item';
     
     constructor() {}
 
