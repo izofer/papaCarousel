@@ -57,7 +57,7 @@ The library uses the [listeners](https://developer.mozilla.org/en-US/docs/Web/AP
 ##### Bundler
 
 ```javascript
-import { PapaFascade } from 'papacarousel'
+import { PapaFascade } from 'papacarousel';
     const listener = new PapaFascade();
     listener.destroyListeners();
 ```
@@ -65,8 +65,9 @@ import { PapaFascade } from 'papacarousel'
 ##### No Bundler
 
 ```html
-<script src="node_modules/papacarousel/bundles/papacarousel.umd.min.js">
-  const listener = new PapaCarousel.PapaFascade(); 
+<script src="node_modules/papacarousel/bundles/papacarousel.min.umd.js"></script>
+<script>
+  const listener = new Papacarousel.PapaFascade(); 
   listener.destroyListeners();
 </script>
 ```
@@ -82,7 +83,7 @@ Install package by npm
 #### **Bundler**
 
 ```javascript
-import { PapaFascade } from 'papacarousel'
+import { PapaFascade } from 'papacarousel';
 
 const myCarousel = new PapaFascade()
                         .setParent('.papa-container')
@@ -108,9 +109,9 @@ const myCarousel = new PapaFascade()
               <div class="papa-item">3</div>
             </div>
         </body>
-        <script src="node_modules/papacarousel/bundles/papacarousel.umd.min.js"></script>
+        <script src="node_modules/papacarousel/bundles/papacarousel.min.umd.js"></script>
         <script>
-            const myCarousel = new PapaCarousel.PapaFascade()
+            const myCarousel = new Papacarousel.PapaFascade()
                                     .setParent('.papa-container')
                                     .setElements('.papa-item')
                                     .setButtons(true)
