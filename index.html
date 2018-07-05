@@ -91,7 +91,15 @@
             <img src="./assets/klakier.png" alt="">
         </footer>
     </div>
-    <script src="./papacarousel.umd.js"></script>
+    <script src="./papacarousel.min.umd.js"></script>
+    <script>
+        const myCarousel = new Papacarousel.PapaFascade()
+                                    .setParent('.papa-container')
+                                    .setElements('.papa-item')
+                                    .setButtons(true)
+                                    .setProgressBar(true)
+                                    .getPapa();
+    </script>
 </body>
 
 </html>
